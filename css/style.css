@@ -1,0 +1,607 @@
+@media all and (max-width: 1600px) { 
+
+/* 
+@import url('variables.css');
+@import url('layout/layout.css');
+ */
+
+    @import url('typography.css');
+    @import url('variables.css');
+    /* @import url('style_articles.css'); */
+    /* @import url('style_contacts.css'); */
+    @import url('style_gallery.css');
+    /* @import url('styles.css'); */
+
+/* 
+ .background { 
+    text-align: center;
+    background-image: conic-gradient(#f7006b 50deg,  #fbf45f 100deg, lime 200deg, aqua, blue, magenta, red);
+} */
+
+
+body{
+    background: url("../img/background.jpg"); */
+     /* background: (90deg, rgba(2,0,36,1) 0%, rgba(211,219,14,0.510329131652661) 0%, rgba(0,255,252,1) 86%); */
+    background-position: center center;
+    background-size: cover;
+}
+
+/* 
+.site-nav > li {
+    transform: translate Y(-1em);
+    transition: opacity 0.4s ease-in, transform 0.4s ease-in-out;
+}
+
+body.loaded .site-nav > li {
+    opacity: 1;
+    transform: translate Y(0);
+}
+ */
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    order: 3;
+    flex: 0 0 37%;
+    transition: transform 1s linear;
+}
+
+/* 
+h1:hover{
+    transform: rotate(1080deg);
+}
+ */
+ 
+h1>img{
+    margin-left:30px;
+}
+
+.second-nav{
+    display: flex;
+    position: relative;
+    order: 4;
+    justify-content: end;
+}
+
+.second-nav>ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    flex: 0 0 96%;
+    gap: 2%;
+}
+
+.second-nav>ul>li{
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 20%;
+}
+
+body > header > nav > ul > li:nth-child(2){
+    flex: 0 0 35%; 
+}
+body > header > nav > ul > li:nth-child(3){
+    flex: 0 0 35%; 
+}
+
+.navbar{
+    display: flex;
+    flex: 0 0 8%;
+}
+
+#navbar {
+    overflow: hidden;
+    font-family: Arial;
+    background: transparent;
+    position: absolute;
+    top: 0;
+}
+
+/* The dropdown container */
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+
+  /* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+  /* Dropdown content (hidden by default) */
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style-type: none;
+}
+
+ /* Links inside the dropdown  */
+.dropdown-content a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+  /* Add a red background color to navbar links on hover */
+#navbar a:hover, .dropdown:hover .dropbtn{
+    background-color: red;
+}
+
+  /* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover{
+    background-color: #ddd;
+}
+  
+  /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content{
+    display: block;
+    position: relative;
+    top: 0;
+}
+
+.logos{ 
+    display: flex;
+    flex: 0 0 10%;
+}
+
+.logo-lng{
+    display: flex;
+    flex: 0 0 100%;
+    align-items: baseline;
+}
+
+#navbar > div > ul > li > a{
+    text-transform: uppercase;
+}
+
+.button-uk{background: url('http://www.freeimageslive.co.uk/files/images006/union_flag.thumbnail.jpg');}
+.button-ru{background: url('../../img/russia.png');}
+.button-it{background: url('../../img/italian-flag.png');}
+.button-de{background: url('../../img/germany-flag.png');}
+.button-fr{background: url('../../img/Flag_of_France.png');}
+
+.button-uk,
+.button-ru,
+.button-it,
+.button-de,
+.button-fr{
+    background-size: cover;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+    margin-right: 6px;
+    border: none;
+}
+
+.button-uk{
+    height: 33px;
+    position: relative;
+    top: -8px;
+}
+
+.button-de{
+    height: 65px;
+    position: relative;
+    top: 8px;
+}
+
+.button-fr{
+    height: 32px;
+    position: relative;
+    top: -10px;
+}
+
+.button-uk:hover,
+.button-ru:hover,
+.button-it:hover,
+.button-de:hover,
+.button-fr:hover{
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    margin-bottom: 150px;
+}
+
+h2{
+    display: flex;
+    flex-flow: wrap row;
+    width: 14%;
+    position: absolute;
+    top: 15%; left: 33%;
+}
+
+.inline-fourth{
+    display:flex;
+    position: relative;
+    top: 100px;
+    left: 65%;
+    width: 30%;
+}
+
+.inline-fourth>form{
+    background: rgb(245,241,212);
+    color: black;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    border-color: azure;
+    border-width: 8px;
+    width: 90%;
+}
+
+input[type=submit]{
+    margin: 0 auto;
+    height: 30px;
+    width: 130px;
+    border: outset;
+}
+
+input:checked{
+    border: none;
+    outline: 2px solid deeppink;
+}
+
+footer{
+    background: white;
+}
+.footerincl > iframe > [class="fa-"]{
+    font-size: 25px;
+    background: transparent;
+    color: black;
+    position: relative;
+    z-index: 600;
+}
+
+.love{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-top: 15px;
+    flex-basis: 100%;
+}
+
+body > main > section > form > fieldset > input[type=submit]{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 55px;
+}
+
+audio{
+    position: absolute;
+    bottom: 370px;
+}
+
+video{
+    position: absolute;
+    bottom: 125px;
+    width: 30%;
+}
+
+body > main > iframe{
+    position: relative;
+    bottom: -17em;
+}
+
+.btn.btn.btn-success{
+    width: 150px;
+    height: 50px;
+}
+/* 
+.float{
+    background: white;
+}
+
+.float > img{
+    float: left;
+    width: 30%;
+}
+ */
+
+#test-nav>ul li{
+    display: inline-block;
+}
+
+.activities,
+.second-activities{
+    display: none;
+}
+
+#egypt{
+    position: relative;
+}
+
+#egypt:hover .activities{
+    display: block;
+    position: absolute;
+    top: 18px;
+}
+
+
+footer>div>iframe>p{
+    color:black;
+    text-align: center;
+    margin: 0;
+}
+
+footer > iframe{
+    display: flex;
+}
+.footer{
+    flex-basis: 100%;
+    margin-left: 45%;
+}
+
+/*ARTICLES************/
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.calendar{
+    background: #bbeaff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    flex: 1 0 95%;
+    margin-top: 63px;
+    margin-bottom: 15px;
+}
+
+.side-first header,
+.side-first section div{
+    border: 2px solid black;
+    text-align: center;
+    line-height: 45px;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+}
+
+.side-first header,
+.side-first section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    width: 100%;
+}
+
+.side-second{
+    display: flex;
+    flex-direction: column;
+}
+
+#width,
+#width2{
+    width: 49.5%;
+}
+
+textarea{
+    columns: 20;
+    height: 97px;
+}
+
+
+#forms {
+    display: flex;
+    background-color: antiquewhite;
+    width: 86%;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 95px;
+    justify-content: center;
+    margin: 0 10%;
+} 
+
+#males{
+    color: blue;
+}
+#females{
+    color: red;
+}
+
+#sinai{
+    width: 350px;
+    height: 250px;
+}
+
+a.button-read {
+    border: 5px solid black;
+    border-radius: 30%;
+    background-color: red;
+    color: black;
+    margin: 10px;
+    padding: 25px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    order: 3;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+a.button-read:hover{
+    background: coral;
+    color: white;
+    border-color: white;
+    outline: none;
+}
+
+/*************************GALLERY*****************/
+
+.box{
+    background: red;
+    width: 25%;
+    height: 30%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.boxes{
+    display: inline-block;
+    box-sizing: border-box;
+    background: #E7E9EB;
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.flex{
+    background: pink;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-flex{
+    border: 3px solid black;
+    background: white;
+    font-size: 30px;
+    text-align: center;
+    height: 50px;
+    flex: 0 0 350px;
+    margin: 5px;
+}
+
+.inner-flex:nth-child(3){
+    flex-shrink: 3;
+}
+
+#box1{    
+    position: absolute; top:0; right:0;}
+#box2{
+    position: absolute; top:0; left:0;}
+#box3{
+    position: absolute; bottom:0; right:0;}
+#box4{
+    position: absolute; bottom:0; left:0;}
+#box5{
+    position: absolute; top:50%; left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.inner-flex:nth-child(3){
+    flex-shrink: 3;
+}
+
+/************CONTACTS**************************/
+
+#forms{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+table{
+    table-layout: fixed;
+}
+
+details{
+    color: blueviolet;
+}
+
+.contacts{
+    width: 15%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2{
+    margin-bottom: 0;
+}
+
+.contacts > div > p {
+    margin-top: 3px;
+}
+
+.google-maps{
+    width: 70%;
+    height: 300px;
+}
+
+.google-maps > iframe{
+    width: 15%;
+    height: auto;
+}
+
+.pic-map > a > img,
+#map{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; 
+}
+
+#sinai{
+    position: absolute;
+    left: 36%;
+    bottom: 55%;
+}
+
+#map{
+    position: absolute;
+    left: 30%;
+    bottom: 45%;
+}
+
+#btnControl{
+    display: none;
+}
+
+.google-maps > div > label > div > p{
+    visibility: hidden;
+}
+
+#btnControl:checked + label > img {
+    width: 250px;
+    height: 250px;
+    border-radius: 0;
+    position: absolute;
+    left: 40%;
+    bottom: 45%;
+}
+
+#btnControl:checked + label > div > p{
+    visibility: visible;
+    background: whitesmoke;
+    border: 2px solid black;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 50%;
+    bottom: 13%;
+}
+
+}

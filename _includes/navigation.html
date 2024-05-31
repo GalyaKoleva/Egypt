@@ -1,0 +1,35 @@
+
+<section class="navbar">
+   
+    <div id="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">MENU<i class="fa fa-caret-down"></i></button>
+                <ul class="dropdown-content">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="https://travel-bg.eu">TRAVEL</a></li>
+                    <li><a href="https://travel-bg.eu/egypt">EGYPTION HISTORY</a></li>
+                    <li><a href="https://travel-bg.eu/egypt">DIVING</a></li>
+                <!-- 
+        <div class="dropdown2">                                                 
+            <button class="dropbtn2"><><i class="fa fa-caret-down"></i></button>
+                <ul class="dropdown-content2"> -->
+                    {% assign nav = site.pages | sort:"order"  %}
+                    {% for page in nav %}
+                        {% if page.title %}
+                            <li><a href="{{page.url}}" target="blank">{{page.title}}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+        </div>
+    </div>
+</section>
+    
+<section class="logos">
+    <div class="logo-lng">
+        <a href="../index"><button class="button-uk"></button></a>
+        <a href="../index_ru"><button class="button-ru"></button></a>
+        <a href="../index_it"><button class="button-it"></button></a>
+        <a href="../index_de"><button class="button-de"></button></a>
+        <a href="../index_fr"><button class="button-fr"></button></a>
+    </div>
+</section>

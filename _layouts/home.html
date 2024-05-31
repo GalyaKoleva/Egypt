@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Galya" content="test-HTML-CSS">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/f92d344e1d.js" crossorigin="anonymous"></script>
+    <!-- Logo -->
+    <link rel="icon" type="image/png" sizes="32x32" href="C:/Users/Galya/Desktop/test/main/img/favicon-96x96.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ejt3kcz.css">
+    <link rel="stylesheet" type="text/css" href="{{ root_url }}/css/style.css">
+<title>HELLO EGYPT</title>
+</head>
+
+<body>
+    <header>
+        {% include navigation.html %} 
+    </header>
+    
+    <main>
+    <h1>{{ page.title }}</h1>
+
+    <section>
+        {{ content }}
+    </section>
+    </main>
+
+    <footer>
+        {% include footer.html %}
+    </footer>
+</body>
+
+</html>

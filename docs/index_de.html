@@ -1,0 +1,61 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: home
+permalink: /index_de/
+title: Home
+name: HOME
+---
+
+<nav class="second-nav">
+    <ul>
+        <li><input type="submit" value="Login" /></li>
+        <li><label for="email">Email</label>
+    <div>
+        <input type="email" id="email" pattern=".+@example.com" size="30" placeholder="example@example.com" tabindex="3" required/>
+    </div></li>
+        <li><label for="pass">Passwort</label>
+    <div>
+        <input type="password" id="pass" name="password" minlength="8" required />
+    </div></li>
+    </ul>
+</nav>
+</header>
+
+<main>
+<h2 class="test-float">WILLKOMMEN IN SHARM EL SHEIKH</h2>
+<section class="inline-fourth">
+<form>
+    <fieldset>
+        <legend id="legend">Create Account</legend>
+        <label for="first-name">Vorname</label>
+        <div>
+        <input type="text" name="first-name" id="first-name" tabindex="1">
+        </div>
+
+        <label for="second-name">Zweitname</label>
+        <div>
+        <input type="text" name="second-name" id="second-name" tabindex="2">
+        </div>
+        <label for="email">Email</label>
+        <div>
+        <input type="email" id="email" pattern=".+@example.com" size="30" placeholder="example@example.com" tabindex="3" required/>
+        </div>
+        <label for="country">Land:</label>
+        <select id="country" name="country">
+            <option>UK +44</option>
+            <option>US +1</option>
+            <option>Germany +49</option>
+            <option selected>Egypt +20</option>
+        </select>
+        </div>
+        <div><p>Phone number:</p>
+        <input id="areaNo" name="areaNo" type="tel" required pattern="[0-9]{3}" aria-label="Area code" />
+        </div>
+
+        <input type="submit" value="Benutzerkonto erstellen" />
+    </fieldset>
+</form>
+</section> 
+</main>

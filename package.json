@@ -1,0 +1,30 @@
+{
+  "name": "egypt",
+  "version": "1.0.0",
+  "description": "egypt",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo\\Error: no test specified \\ && exit 1"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "type": "module",
+  "author": "Galya Koleva",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^3.0.2",
+    "childprocess": "^2.0.2",
+    "github-markdown-css": "^5.5.1",
+    "gulp-cli": "^3.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-exec": "^5.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^9.0.0",
+    "sass": "^1.77.3"
+  }
+}
